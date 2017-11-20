@@ -3,11 +3,13 @@
 
 ---
 - name: Ensure wheel group exists
+  become: yes
   group:
     name: wheel
     state: present
 
 - name: Ensure users in wheel group can sudo without password
+  become: yes
   ignore_errors: True # TODO: remove this
   template:
     src: 91-wheel-group.j2
