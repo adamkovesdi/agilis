@@ -1,0 +1,15 @@
+# ansible task for placing a template for wheel group in /etc/sudoers.d
+# passwordless sudo
+
+---
+- name: Ensure wheel group exists
+  group:
+    name: wheel
+    state: present
+
+- name: Ensure users in wheel group can sudo without password
+  ignore_errors: True # TODO: remove this
+  template:
+    src: 91-wheel-group.j2
+    dest: /etc/sudoers.d/91-wheel-group
+    mode: 0440

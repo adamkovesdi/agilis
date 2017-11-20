@@ -1,0 +1,5 @@
+#!/bin/bash
+# source this for bash, zsh ssh alias:
+# $ source alias
+#
+alias assh="ssh -i ~/Dropbox/devel/agilis/agiliskey -l user 192.168.82.77"
