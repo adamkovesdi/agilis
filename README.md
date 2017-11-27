@@ -1,6 +1,6 @@
 # README for agilis system
 
-![overview-drawing](drawing/ci-demo.svg)
+![overview-drawing](drawing/ci-demo.png)
 
 Overview of agilis system  
 
