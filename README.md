@@ -1,11 +1,15 @@
+# README for agilis system
 
-README
-------
+![overview-drawing](drawing/ci-demo.svg)
 
-adamkov's ansible system provisioning playbooks for agilis system
+Overview of agilis system  
 
-Step by step deployment
------------------------
+__Work in progress - docker files and ansible scripts are not public ready yet__
+
+adamkov's ansible system provisioning playbooks for agilis system  
+agilis is a hypothetical SW development environment based on docker containerized components
+
+## Step by step deployment
 
 1. Install Ubuntu server edition to target system
 2. Set up networking - static IP address template is available under files
@@ -13,8 +17,7 @@ Step by step deployment
 4. ansible-playbook -K playbook.yml
 5. ansible-playbook adamcustom.yml	(Optional)
 
-Acknowledgements
-----------------
+## Acknowledgements
 
 Jeff Geerling for docker installer role
 

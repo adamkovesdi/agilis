@@ -8,6 +8,7 @@ inventory
 agiliskey*
 # simple ssh command
 shell.sh
+keys
 # network interface config files
 files/agilis/etc/network/interfaces.d/*
 !files/agilis/etc/network/interfaces.d/wired.template
