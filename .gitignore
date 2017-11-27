@@ -1,0 +1,14 @@
+#
+# my git ignore file for agilis project
+# leave these files out from commits
+
+# use your own inventory - inventory.template provided
+inventory
+# generate key with generate-keys.sh
+agiliskey*
+# simple ssh command
+shell.sh
+keys
+# network interface config files
+files/agilis/etc/network/interfaces.d/*
+!files/agilis/etc/network/interfaces.d/wired.template

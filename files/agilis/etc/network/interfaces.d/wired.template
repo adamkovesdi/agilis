@@ -1,0 +1,6 @@
+auto INTERFACE_NAME
+iface INTERFACE_NAME inet static
+	address INTERFACE_IP
+	netmask INTERFACE_NETMASK
+	gateway INTERFACE_GATEWAY 
+	dns-nameserver 8.8.8.8

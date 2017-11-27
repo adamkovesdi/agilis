@@ -1,0 +1,10 @@
+---
+- hosts: all
+  vars:
+    - deployuser: "user"
+    - userkey: "~/Dropbox/devel/agilis/keys/agiliskey.pub"
+  roles:
+    - passwordless-sudo
+    - packages
+    - userconfig
+    - ansible-role-docker

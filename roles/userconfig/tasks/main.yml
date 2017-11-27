@@ -1,0 +1,20 @@
+- name: Set up authorized keys for the deployer user
+  authorized_key:
+    user: "{{ deployuser }}"
+    key: "{{ item }}"
+  with_file:
+    - "{{ userkey }}" 
+
+- name: Make sure we have a 'wheel' group
+  become: yes
+  group:
+    name: wheel
+    state: present
+
+- name: Add user to wheel group
+  ignore_errors: True # TODO: remove this
+  become: yes
+  user: name={{ deployuser }} groups=wheel append=yes state=present
+
+
+
