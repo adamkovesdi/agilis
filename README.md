@@ -11,7 +11,7 @@ agilis is a hypothetical SW development environment based on docker containerize
 
 ## Step by step deployment
 
-1. Install Ubuntu server edition to target system
+1. Install Ubuntu server edition to target system and create account named user
 2. Set up networking - static IP address template is available under files
 3. Generate ssh keypair with generate-keys.sh script
 4. ansible-playbook -K playbook.yml
@@ -20,5 +20,4 @@ agilis is a hypothetical SW development environment based on docker containerize
 ## Acknowledgements
 
 Jeff Geerling for docker installer role
-
 
