@@ -1,6 +1,6 @@
 # README for agilis system
 
-![overview-drawing](drawing/ci-demo.svg)
+![overview-drawing](drawing/ci-demo.png)
 
 Overview of agilis system  
 
@@ -15,7 +15,7 @@ agilis is a hypothetical SW development environment based on docker containerize
 2. Set up networking - static IP address template is available under files
 3. Generate ssh keypair with generate-keys.sh script
 4. ansible-playbook -K playbook.yml
-5. ansible-playbook adamcustom.yml	(Optional)
+5. ansible-playbook usercustom.yml	(Optional)
 
 ## Acknowledgements
 
