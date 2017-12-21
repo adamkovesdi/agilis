@@ -1,4 +1,6 @@
 - name: Set up authorized keys for the deployer user
+  become: yes
+  become_user: "{{ deployuser }}"
   authorized_key:
     user: "{{ deployuser }}"
     key: "{{ item }}"
